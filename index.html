@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Todo List</h1>
-        <div class="input-area">
+    <main class="container">
+        <header>
+            <h1>Todo List</h1>
+        </header>
+        <section class="input-area">
             <input type="text" id="task-input" placeholder="Введите задачу">
             <select id="task-category">
                 <option value="work">Работа</option>
@@ -17,23 +19,23 @@
                 <option value="rest">Отдых</option>
             </select>
             <button id="add-task">Добавить</button>
-        </div>
-        <div class="columns">
-            <div class="column">
+        </section>
+        <section class="columns">
+            <article class="column">
                 <h2>Работа</h2>
                 <ul class="task-list" id="work-list"></ul>
-            </div>
-            <div class="column">
+            </article>
+            <article class="column">
                 <h2>Хобби</h2>
                 <ul class="task-list" id="hobby-list"></ul>
-            </div>
-            <div class="column">
+            </article>
+            <article class="column">
                 <h2>Отдых</h2>
                 <ul class="task-list" id="rest-list"></ul>
-            </div>
-        </div>
+            </article>
+        </section>
         <button class="clear-btn">Очистить</button>
-    </div>
+    </main>
     <script>
         const taskInput = document.getElementById('task-input');
         const taskCategory = document.getElementById('task-category');
